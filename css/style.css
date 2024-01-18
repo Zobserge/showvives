@@ -1990,7 +1990,7 @@ a:active::before {
   height: 8px;
   top: 44%;
   left: 10%;
-  content: 0;
+  content: "";
   border-radius: 50%;
   background-color: white;
 }
@@ -2196,7 +2196,7 @@ input[name=username] {
 .input-box-srh input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right-color: 0;
+  border-right-color: transparent;
 }
 
 .input-box-srh .ic-search-btn {
@@ -3289,8 +3289,8 @@ input[name=username] {
   padding: 12px 16px;
   text-decoration: none;
   border: none;
-  -webkit-transition: background color ease-in-out 0ms;
-  transition: background color ease-in-out 0ms;
+  -webkit-transition: background-color 0.2s ease-in-out 0ms, color 0.2s ease-in-out 0ms;
+  transition: background-color 0.2s ease-in-out 0ms, color 0.2s ease-in-out 0ms;
   color: white;
   cursor: pointer;
 }
@@ -6520,8 +6520,8 @@ button.swiper-pagination-bullet {
   height: 100%;
   border: 1px solid transparent;
   border-radius: 50%;
-  -webkit-transition: opacity border ease-in-out 0ms;
-  transition: opacity border ease-in-out 0ms;
+  -webkit-transition: opacity 0.2s ease-in-out 0ms, border 0.2s ease-in-out 0ms;
+  transition: opacity 0.2s ease-in-out 0ms, border 0.2s ease-in-out 0ms;
 }
 
 .cnt-social a:before {
@@ -6746,7 +6746,7 @@ html.with-fancybox header.hdr--fixed {
 }
 
 .fsc-banner__content {
-  margin-bottom: 32;
+  margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9048,7 +9048,7 @@ html.with-fancybox header.hdr--fixed {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1140px) {
   .animate__animated {
     /*CSS transitions*/
     -webkit-transition-property: none !important;
